@@ -160,11 +160,16 @@
 	</build>
 
 	<distributionManagement>
-	    <repository>
-	        <id>nexus-release-repository</id>
-	        <name>release-repository</name>
-	        <url>${REPOSITORY_URL}</url>
-	    </repository>
+        <repository>
+            <id>nexus</id>
+            <name>Internal Releases</name>
+            <url>http://192.168.99.100:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>Internal Snapshot Releases</name>
+            <url>http://192.168.99.100:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
 	</distributionManagement>
 
 </project>
